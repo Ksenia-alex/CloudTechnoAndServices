@@ -1,0 +1,16 @@
+FROM nginx:1.23-alpine
+
+RUN apk add --no-cache nginx-mod-http-headers-more
+
+ADD . /app
+
+RUN mkdir -p /usr/share/nginx/html/projects/ && mv /app/projects/* /usr/share/nginx/html/projects/
+RUN mv /app/LabDocker/Dockerfile/nginx.conf /etc/nginx/nginx.conf
+RUN mkdir -p /etc/nginx/ssl/ && mv /app/LabDocker/ssl/* /etc/nginx/ssl/
+RUN rm -f /etc/nginx/conf.d/default.conf
+
+WORKDIR /usr/share/nginx/html
+
+EXPOSE 80 443
+
+CMD ["nginx", "-g", "daemon off; pid /tmp/nginx.pid;"]
