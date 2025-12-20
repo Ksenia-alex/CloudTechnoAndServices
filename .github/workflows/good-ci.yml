@@ -44,4 +44,4 @@ jobs:
       - name: Launch container and test
         run: | 
           docker run -d -p 8080:80 --name static static-site
-          curl --fail http://localhost:8080/landing/ChooseProject.html
+          timeout 15s bash -c 'until curl --fail http://localhost:8080/landing/ChooseProject.html; do sleep 1; done'
