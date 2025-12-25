@@ -1,0 +1,41 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    restart: unless-stopped    # перезапуск только при падении
+    environment:
+      - DATABASE_URL=sqlite:///./hackathon.db
+    env_file:
+      - .env  # убран env ключ из environment (SECRET_KEY=admin)
+    expose:
+      - "8000"    # доступ только внутри сети
+    volumes:
+      - backend_data:/app/files    # только данные, код не монтируется
+    networks:
+      - backend_net    # отдельная сеть для изоляции
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    restart: unless-stopped    # перезапуск только при падении x2
+    ports:
+      - "443:443"
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - frontend_net    # отдельная сеть для изоляции x2
+
+volumes:
+  backend_data: {}
+
+networks:
+  backend_net:
+    driver: bridge
+  frontend_net:
+    driver: bridge
