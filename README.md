@@ -20,7 +20,10 @@ ___
 [Отчет по лабе](LabDockerStar/Отчет.md)
 
 ### Лабораторная работа №3
+- Обычная  
 [Отчет по лабе](LabCiCd/Отчет.md)
+- Со звездочкой  
+[Отчет по лабе](https://github.com/inview-club/devops-cases/blob/main/05-whitespots/solutions/Tolstukhina_Tumanova_Gritzkevich/README.md)
 
 ---
 
@@ -28,5 +31,5 @@ ___
 ### Лабораторная работа №1
 [Отчет по лабе](LabCloud/LabAWS/Отчет.md)
 
-### Лабораторная работа №1
+### Лабораторная работа №2
 [Отчет по лабе](LabCloud/LabAnalysis/Отчет.md)
