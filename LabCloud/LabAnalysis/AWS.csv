@@ -1,0 +1,39 @@
+IT Tower,Service Family,Service Type,Service Sub Type,Service Usage Type,Product Code,Usage Type,[lineItem/Operation],lineItem/LineItemDescription
+Cloud Services,Application Services,Amazon EFS,Additional Costs,Tax,AmazonEFS,,,Tax%
+Storage,Storage&Content Delivery,Amazon EFS,Standard Storage,Storage Usage,AmazonEFS,%TimedStorage-ByteHrs,,
+Storage,Storage&Content Delivery,Amazon EFS,Infrequent Access Storage,Data Access,AmazonEFS,%IADataAccess-Bytes,,
+Networking,Networking,Amazon EFS,Provisioned Throughput,Throughput Usage,AmazonEFS,%TP-MiBpsHrs%,,
+Cloud Services,Application Services,Amazon EI,Additional Costs,Tax,AmazonEI,,,Tax%
+Compute,Compute,Amazon EI,eia1 Instance,Instance Hour,AmazonEI,%eia1%,,
+Compute,Compute,Amazon EI,eia2 Instance,Instance Hour,AmazonEI,%eia2%,,
+Cloud Services,Application Services,Amazon Elasti Cache,Additional Costs,Tax,AmazonElastiCache,,,Tax%
+Database,Database,Amazon Elasti Cache,Cache Node,Node Hour,AmazonElastiCache,%NodeUsage:cache%,,
+Database,Database,Amazon Elasti Cache,Backup,Snapshot Creation,AmazonElastiCache,%CreateCacheSnapshot%,,
+Database,Database,Amazon Elasti Cache,Backup,Backup Storage,AmazonElastiCache,%ElastiCache:BackupUsage,,
+Cloud Services,Security and Identity,Amazon Elasti Cache,Additional Costs,Tax,AmazonGuardDuty,,,Tax%
+Cloud Services,Security and Identity,Amazon Guard Duty,Events Analysis,Free Tier Events,AmazonGuardDuty,%FreeEventsAnalyzed,,
+Cloud Services,Security and Identity,Amazon Guard Duty,Events Analysis,Paid Events,AmazonGuardDuty,%PaidEventsAnalyzed,,
+Cloud Services,Security and Identity,Amazon Guard Duty,Logs Analysis,Free Tier Data,AmazonGuardDuty,%FreeEventsAnalyzed-Bytes,,
+Cloud Services,Security and Identity,Amazon Guard Duty,Logs Analysis,Paid Data,AmazonGuardDuty,%PaidEventsAnalyzed-Bytes,,
+Cloud Services,Analytics,Amazon Kinesis,Additional Costs,Tax,AmazonKinesis,,,Tax%
+Storage,Storage&Content Delivery,Amazon Kinesis,Data Storage,Storage Usage,AmazonKinesis,%Storage-ShardHour,,
+Networking,Networking,Amazon Kinesis,Data Ingestion,Data Ingestion Units,AmazonKinesis,%PutRequestPayloadUnits,,
+Networking,Networking,Amazon Kinesis,Data Retrieval,Data Read Usage,AmazonKinesis,%ReadBytes,,
+Networking,Networking,Amazon Kinesis,Data Retrieval,Enhanced Fan-Out Hours,AmazonKinesis,%EnhancedFanoutHour,,
+Storage,Storage&Content Delivery,Amazon Kinesis,Data Storage,Extended Retention Usage,AmazonKinesis,%Extended-ShardHour,,
+Cloud Services,Artificial Intelligence,Amazon Kendra,Enterprise Edition,Edition Fee,AmazonKendra,%KendraEnterpriseEdition,,
+Cloud Services,Artificial Intelligence,Amazon Kendra,Data Indexing,Data Scanned,AmazonKendra,%DocumentsScanned,,
+Cloud Services,Artificial Intelligence,Amazon Kendra,Connectors,Connector Sync Hours,AmazonKendra,%ConnectorSync,,
+Cloud Services,Artificial Intelligence,Amazon Lex,Additional Costs,Tax,AmazonLex,,,Tax%
+Cloud Services,Artificial Intelligence,Amazon Lex,API Usage,API Requests,AmazonLex,%Req%,,
+Networking,Networking,Amazon Lightsail,Data Transfer,Data Transfer,AmazonLightsail,%DataXfer%,,
+Networking,Networking,Amazon Lightsail,IP Addresses,Unused Static IP Fee,AmazonLightsail,%UnusedStaticIP,,
+Compute,Compute,Amazon Lightsail,Instance,Instance Hour,AmazonLightsail,%BundleUsage%,,
+Storage,Storage&Content Delivery,Amazon Lightsail,Block Storage,Disk Usage,AmazonLightsail,%DiskUsage,,
+Storage,Storage&Content Delivery,Amazon Lightsail,Block Storage,Snapshot Storage,AmazonLightsail,%SnapshotUsage,,
+Cloud Services,Application Services,Amazon Redshift,Additional Costs,Tax,AmazonRedshift,,,Tax%
+Database,Database,Amazon Redshift,RA3 Node,Node Hour,AmazonRedshift,%Node:ra%,,
+Database,Database,Amazon Redshift,Spectrum,Data Scanned,AmazonRedshift,%DataScanned%,,
+Database,Database,Amazon Redshift,DC2 Node,Node Hour,AmazonRedshift,%Node:dc%,,
+Database,Database,Amazon Redshift,DS2 Node,Node Hour,AmazonRedshift,%Node:ds%,,
+Networking,Networking,Amazon Registrar,Domain Registration,Domain Fee,AmazonRegistrar,%Route53-Domains,,
